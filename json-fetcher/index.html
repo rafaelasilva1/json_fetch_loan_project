@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch JSON from Beeceptor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Management</h1>
+        <button id="fetchBtn">Fetch Loans from Beeceptor</button>
+        <div id="loanList"></div>
+        <form id="renewalForm" style="display:none;">
+            <label for="renewalMonth">Choose a month to start the loan again:</label>
+            <input type="month" id="renewalMonth" name="renewalMonth" required>
+            <button type="submit">Submit Renewal</button>
+        </form>
+        <pre id="output">Click the button to fetch JSON data...</pre>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

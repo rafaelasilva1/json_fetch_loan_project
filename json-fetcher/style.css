@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Styling */
+h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Fetch Button Styling */
+#fetchBtn {
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#fetchBtn:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    margin: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Labels for Loans */
+label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Renewal Form Styling */
+#renewalForm {
+    margin-top: 20px;
+    display: none;
+    text-align: left;
+}
+
+#renewalForm label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+#renewalMonth {
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Submit Button Styling */
+#renewalForm button {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+#renewalForm button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Output (Preformatted Text) */
+pre {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
